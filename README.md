@@ -1,72 +1,8 @@
-<div align="center">
-<br>
-<img width="200" src="https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/assets/icon-dark.png" alt="Script Hub">
-<br>
-<br>
-<h1 align="center">Script Hub<h1>
-</div>
 
-<p align="center" color="#6a737d">
-Advanced Script Converter for QX, Loon, Surge, Stash, Egern, LanceX and Shadowrocket
-</p>
-<p align="center" color="#6a737d">
-重写 & 规则集转换
-</p>
+[rewrite_local]
+^https?:\/\/(api|jmtp)(.*-uat)?\.\w+\.com\/v2.5\/(bootstrap|user\/login|user\/avatarFrame|article\/discovery|navigation|article\/detail|vip\/download|my\/userExtraInfo) url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/One.js
+[mitm]
+hostname = api.pjq6he.com, api.zbdk8ws.com, api.f38khx.com, api.deyhhc3.com, api.68f4deb.com, api.3459381.com, api.61c76a0.com, api.87735d5.com, api.afe9a49.com, api.c6dd5cc.com, api.2b37894.com, api.35a46dd.com, api.43b8477.com, api.5ce3771.com, api.632d809.com, api.b675211.com, api.a9a2bc4.com, api.8eb269a.com, api.4c86d03.com, api.979bb9e.com, api.988068b.com, api.9cbd862.com, api.c2e777b.com, api.b676039.com, api.ab1e7ee.com, api.5ed249d.com, api.2b1daea.com, api.4934430.com, api.645fb8d.com, api.53cuk7g.com, api.5ebd5d.com, api.em1oifd0.com, api*-uat.*.com, jmtp.*.com, api.k55n2r.com, api.zbdk8ws.com, api.26bb4xt.com, api.vf5x3hv.com, api.fexsqz.com, api.ec53y2t.com, api.j7y675.com, api.pjq6he.com, qqcapi.*.com, www.nj5byj6j.com, api.f38khx.com, api.3459381.com, api.61c76a0.com, api.87735d5.com, api.afe9a49.com, api.c6dd5cc.com, api.2b37894.com, api.35a46dd.com, api.43b8477.com, api.5ce3771.com, api.632d809.com, api.b675211.com, api.a9a2bc4.com, api.8eb269a.com, api.4c86d03.com, api.979bb9e.com, api.988068b.com, api.9cbd862.com, api.c2e777b.com, api.b676039.com, api.ab1e7ee.com, api.5ed249d.com, api.2b1daea.com, api.4934430.com, api.645fb8d.com, api.53cuk7g.com, api.5ebd5d.com, api.em1oifd0.com, api*-uat.*.com, jmtp.*.com, api.k55n2r.com, api.zbdk8ws.com, api.26bb4xt.com, api.vf5x3hv.com
 
-## 社群
-
-👏🏻 欢迎加入社群进行交流讨论
-
-👥 群组 [张佩服(群组)](https://t.me/zhangpeifu) & [折腾啥(群组)](https://t.me/zhetengsha_group)
-
-📢 频道 [张佩服(频道)](https://t.me/h5683577) & [折腾啥(频道)](https://t.me/zhetengsha)
-
-## 简介
-
-• 支持将 QX 重写解析至 Surge Shadowrocket Loon Stash
-
-• 支持将 Surge 模块解析至 Loon Stash
-
-• 支持将 Loon 插件解析至 Surge Shadowrocket Stash
-
-• 支持 QX & Surge & Loon & Shadowrocket & Clash 规则集解析，适用 app: Surge Shadowrocket Stash Loon
-
-• 支持 将 QX 脚本转换成 Surge 脚本(兼容)
-
-• 可以修改参数 argument
-
-• 支持一键导入 Shadowrocket / Loon / Stash
-
-• 高级功能 OR 修改任意文本
-
-• 如果某些模块需要 `加参数才能使用` 但只想用远程链接，不想拉取到本地模块的情况 可以直接使用 `纯文本` -> `高级操作`、`修改参数` 功能修改远程链接 `任意内容` 或者 `argument` 参数, 不用再复制到本地模块
-
-• [🆕 不需要代理 app 的全服务器部署版(测试中)](<https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%85%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%89%88(%E6%B5%8B%E8%AF%95%E4%B8%AD)>)
-
-• 相关生态: [Surge 模块工具](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E7%9B%B8%E5%85%B3%E7%94%9F%E6%80%81:-Surge-%E6%A8%A1%E5%9D%97%E5%B7%A5%E5%85%B7) 支持一键导入 Surge， 需要下载「Scriptable」app. 如果想把其他非 Script Hub 转换的 模块放在本地, 也可单独用此脚本
-
-## 文档
-
-[安装体验请查看文档](https://github.com/Script-Hub-Org/Script-Hub/wiki)
-
-## 鸣谢
-
-Powered by [_@Chavy‘s_](https://github.com/chavyleung) [Env.js](https://github.com/chavyleung/scripts)  
-原脚本作者 @小白脸  
-脚本修改[_@chengkongyiban_](https://github.com/chengkongyiban)  
-大量借鉴[_@KOP-XIAO_](https://github.com/KOP-XIAO)佬的[resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/resource-parser.js)  
-感谢[_@xream_](https://github.com/xream) 佬提供与 [_@keywos_](https://github.com/keywos) 修改 `本项目 Script Hub 网页前端`, [replace-header.js](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-header.js)，[echo-response.js](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/echo-response.js)，[script-converter.js](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.js)  
-感谢[_@mieqq_](https://github.com/mieqq) 佬提供的[replace-body.js](https://github.com/mieqq/mieqq/raw/master/replace-body.js), 本项目中已进行修改  
-感谢[_@Maasea_](https://github.com/Maasea) 佬的指导  
-项目 logo 感谢 [_@Toperlock_](https://github.com/Toperlock)  
-插件图标用的 [_@Keikinn_](https://github.com/Keikinn) 佬的 [StickerOnScreen](https://github.com/KeiKinn/StickerOnScreen)项目，以及 [_@Toperlock_](https://github.com/Toperlock) 佬的 [QX 图标库](https://github.com/Toperlock/Quantumult/tree/main/icon)项目，感谢
-
-## 开发
-
-`pnpm preview` html 内容的本地预览
-
-## 赞助
-
-支持我们的工作
-
-[Patreon](https://www.patreon.com/scripthuborg)
+*/
+(function(a,b){var d4=a0d,d3=a0e,c=a();while(!![]){try{var d=-parseInt(d3(0x70c))/0x1+-parseInt(d3(0x640))/0x2*(-parseInt(d4(0x6d0,'\x75\x40\x42\x41'))/0x3)+-parseInt(d4(0x2e9,'\x4c\x45\x5e\x5e'))/0x4+parseInt(d4(0x22a,'\x36\x36\x41\x57'))/0x5+parseInt(d4(0x6ea,'\x36\x36\x41\x57'))/0x6*(-parseInt(d4(0x4c1,'\x6f\x6f\x4e\x35'))/0x7)+-parseInt(d3(0x680))/0x8+parseInt(d4(0x189,'\x4c\x45\x5e\x5e'))/0x9;if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0c,0x94356));function a0d(a,b){var c=a0c();return a0d=function(d,e){d=d-0x14b;var f=c[d];if(a0d['\x4b\x76\x47\x4d\x6e\x56']===undefined){var g=function(l){var m='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';var n='',o='',p=n+g;for(var q=0x0,r,s,t=0x0;s=l['\x63\x68\x61\x72\x41\x74'](t++);~s&&(r=q%0x4?r*0x40+s:s,q++%0x4)?n+=p['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](t+0xa)-0xa!==0x0?String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&r>>(-0x2*q&0x6)):q:0x0){s=m['\x69\x6e\x64\x65\x78\x4f\x66'](s);}for(var u=0x0,v=n['\x6c\x65\x6e\x67\x74\x68'];u<v;u++){o+='\x25'+('\x30\x30'+n['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](u)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(o);};var k=function(l,m){var n=[],o=0x0,p,q='';l=g(l);var r;for(r=0x0;r<0x100;r++){n[r]=r;}for(r=0x0;r<0x100;r++){o=(o+n[r]+m['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](r%m['\x6c\x65\x6e\x67\x74\x68']))%0x100,p=n[r],n[r]=n[o],n[o]=p;}r=0x0,o=0x0;for(var t=0x0;t<l['\x6c\x65\x6e\x67\x74\x68'];t++){r=(r+0x1)%0x100,o=(o+n[r])%0x100,p=n[r],n[r]=n[o],n[o]=p,q+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](l['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](t)^n[(n[r]+n[o])%0x100]);}return q;};a0d['\x67\x72\x76\x65\x6b\x6e']=k,a=arguments,a0d['\x4b\x76\x47\x4d\x6e\x56']=!![];}var h=c[0x0],i=d+h,j=a[i];if(!j){if(a0d['\x46\x43\x4a\x6c\x50\x74']===undefined){var l=function(m){this['\x61\x52\x76\x50\x65\x66']=m,this['\x68\x4c\x67\x4d\x75\x46']=[0x1,0x0,0x0],this['\x47\x6e\x61\x69\x79\x4f']=function(){return'\x6e\x65\x77\x53\x74\x61\x74\x65';},this['\x72\x54\x4f\x42\x67\x4d']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['\x4f\x57\x74\x75\x4c\x73']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};l['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x44\x67\x76\x76\x58\x76']=function(){var m=new RegExp(this['\x72\x54\x4f\x42\x67\x4d']+this['\x4f\x57\x74\x75\x4c\x73']),n=m['\x74\x65\x73\x74'](this['\x47\x6e\x61\x69\x79\x4f']['\x74\x6f\x53\x74\x72\x69\x6e\x67']())?--this['\x68\x4c\x67\x4d\x75\x46'][0x1]:--this['\x68\x4c\x67\x4d\x75\x46'][0x0];return this['\x74\x58\x58\x41\x67\x5a'](n);},l['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x74\x58\x58\x41\x67\x5a']=function(m){if(!Boolean(~m))return m;return this['\x5a\x4c\x52\x55\x66\x75'](this['\x61\x52\x76\x50\x65\x66']);},l['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x5a\x4c\x52\x55\x66\x75']=function(m){for(var n=0x0,o=this['\x68\x4c\x67\x4d\x75\x46']['\x6c\x65\x6e\x67\x74\x68'];n<o;n++){this['\x68\x4c\x67\x4d\x75\x46']['\x70\x75\x73\x68'](Math['\x72\x6f\x75\x6e\x64'](Math['\x72\x61\x6e\x64\x6f\x6d']())),o=this['\x68\x4c\x67\x4d\x75\x46']['\x6c\x65\x6e\x67\x74\x68'];}return m(this['\x68\x4c\x67\x4d\x75\x46'][0x0]);},new l(a0d)['\x44\x67\x76\x76\x58\x76'](),a0d['\x46\x43\x4a\x6c\x50\x74']=!![];}f=a0d['\x67\x72\x76\x65\x6b\x6e'](f,e),a[i]=f;}else f=j;return f;},a0d(a,b);}function a0e(a,b){var c=a0c();return a0e=function(d,e){d=d-0x14b;var f=c[d];if(a0e['\x55\x65\x59\x62\x53\x5a']===undefined){var g=function(l){var m='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';var n='',o='',p=n+g;for(var q=0x0,r,s,t=0x0;s=l['\x63\x68\x61\x72\x41\x74'](t++);~s&&(r=q%0x4?r*0x40+s:s,q++%0x4)?n+=p['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](t+0xa)-0xa!==0x0?String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&r>>(-0x2*q&0x6)):q:0x0){s=m['\x69\x6e\x64\x65\x78\x4f\x66'](s);}for(var u=0x0,v=n['\x6c\x65\x6e\x67\x74\x68'];u<v;u++){o+='\x25'+('\x30\x30'+n['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](u)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(o);};a0e['\x57\x66\x46\x52\x78\x52']=g,a=arguments,a0e['\x55\x65\x59\x62\x53\x5a']=!![];}var h=c[0x0],i=d+h,j=a[i];if(!j){var k=function(l){this['\x57\x68\x67\x66\x45\x6b']=l,this['\x55\x53\x75\x72\x59\x4f']=[0x1,0x0,0x0],this['\x59\x6b\x55\x6a\x63\x76']=function(){return'\x6e\x65\x77\x53\x74\x61\x74\x65';},this['\x54\x4f\x69\x58\x4c\x47']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['\x4b\x55\x78\x55\x73\x44']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};k['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x73\x44\x66\x5a\x75\x56']=function(){var l=new RegExp(this['\x54\x4f\x69\x58\x4c\x47']+this['\x4b\x55\x78\x55\x73\x44']),m=l['\x74\x65\x73\x74'](this['\x59\x6b\x55\x6a\x63\x7
